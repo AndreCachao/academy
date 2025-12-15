@@ -35,3 +35,6 @@ jobs:
 
     - name: Display images
       run: docker image ls
+
+    - name: Setup Maven Build (Actions)
+      uses: ./.github/actions/maven_build
