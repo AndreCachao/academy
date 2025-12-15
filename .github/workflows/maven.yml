@@ -32,3 +32,6 @@ jobs:
 
     - name: Create Docker Image
       run: docker build . --file Dockerfile --tag academy:$(date +%s)
+
+    - name: Display images
+      run: docker image ls
