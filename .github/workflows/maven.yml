@@ -28,9 +28,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Create Docker Image
-      run: docker build . --file Dockerfile --tag academy:$(date +%s)
-
     - name: Setup Maven Build (Actions)
       uses: ./.github/actions/maven_build
 
