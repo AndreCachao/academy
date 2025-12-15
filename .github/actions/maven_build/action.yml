@@ -4,5 +4,5 @@ runs:
   using: composite
   steps:
     - run: |
-        docker build . --file Dockerfile --tag academy:$(date +%s)
+        mvn -B package --file pom.xml
       shell: bash
