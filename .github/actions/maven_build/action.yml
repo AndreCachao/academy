@@ -4,5 +4,5 @@ runs:
   using: composite
   steps:
     - run: |
-        echo "Hello test"
+        docker build . --file Dockerfile --tag academy:$(date +%s)
       shell: bash
